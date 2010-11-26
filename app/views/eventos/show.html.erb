@@ -1,0 +1,28 @@
+
+
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li><%= link_to 'Todos', eventos_path %></li>
+			<li><%= link_to 'Nuevo Evento', new_evento_path %></li>
+			<li class="active"><%= link_to "#{@evento.titulo.capitalize}", "#" %></li>
+			<li><%= link_to 'Editar', edit_evento_path(@evento) %></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2 class="title">
+		  <%=h @evento.titulo.capitalize %>
+		</h2>
+		<div class="inner">
+			<p class="first">
+			  Imagen:<br />
+				<%= image_tag @evento.feventos.url(:thumb) %>
+			</p>
+			
+			<p>
+			  <b>Descripcion:</b>
+			  <%=h @evento.descripcion %>
+			</p>
+		</div>
+	</div>
+</div>

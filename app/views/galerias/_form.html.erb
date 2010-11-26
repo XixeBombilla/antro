@@ -1,0 +1,18 @@
+<% form_for(@galeria, :html => { :multipart => true }) do |f| %>
+<%= f.error_messages :header_message => "Por favor intente nuevamente", :message => "Existen los siguientes errores en los campos de:" %>
+  <p>
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </p>
+ <p>Imagen: (Archivo JPG)<br />
+	<%= f.file_field :fgaleria %>
+</p>
+
+  <p>
+    <%= f.label :descripcion %><br />
+    <%= f.text_field :descripcion %>
+  </p>
+  <p>
+    <%= f.submit 'Guardar' %>
+  </p>
+<% end %>

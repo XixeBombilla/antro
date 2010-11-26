@@ -1,0 +1,68 @@
+<script>	
+		 $(document).ready(function(){
+			$('#home').css({"visibility":"hidden"});
+			$('#abo').css({"visibility":"hidden"});
+			$('#eve').css({"visibility":"hidden"});
+			$('#gal').css({"visibility":"hidden"});
+			$('#cont').css({"visibility":"visible"});
+			$('#1 span').css({"color":"white","font-family":"schoolbook N"});
+			$('#2 span').css({"color":"white","font-family":"schoolbook N"});
+			$('#3 span').css({"color":"white","font-family":"schoolbook N"});
+			$('#4 span').css({"color":"white","font-family":"schoolbook N"});
+			$('#5 span').css({"color":"black","font-family":"schoolbook N"});
+			
+			});
+
+</script>
+
+<div id="contentContact">
+  
+  <div style="margin:auto; width:800px; height:180px; padding-top:10px;">
+			<div>
+                  <p style="text-align:right; width:300px; margin-top:40px;">
+                  	R.S.V.P. 62*280232*2 <br/>
+					Plaza las Palmas local 19 C-D. <br/>
+					León, Gto. <br/>
+					Tel.(477)717-3163 / la.nuit@live.com <br/>
+					www.<span style="color:#99cc33;">lanuitclub</span>.com.mx<br/>
+
+                  </p>
+                 <div style="width:1px; height:180px; position:absolute; margin-left:320px; margin-top:-150px; background-color:#99cc33;"></div>
+				<div style="margin-top:-150px; margin-left:350px; width:500px;"> 
+  
+					<% form_for(@contacto) do |f| %>
+  							<h4 style="color:#99cc33;">Contacto</h4>
+						<div style="text-align:right; float:left; margin-top:-20px;">
+							
+							
+  							<p style="font-size:10pt;">
+    								<%= f.label "Nombre :" %>
+    								<%= f.text_field :nombre %>
+  							</p>
+  							<p style="font-size:10pt;">
+    							<%= f.label "Telefono :" %>
+    							<%= f.text_field :tel %>
+  							</p>
+  							<p style="font-size:10pt;">
+    							<%= f.label "E-mail :" %>
+    							<%= f.text_field :correo %>
+  							</p>
+								<p style="font-size:10pt; color:#99cc33;">
+	    						<%= f.submit 'Enviar' %>
+								<p>
+
+						</div>
+  						<div style="text-align:left; margin-left:20px; float:left; margin-top:-52px;">
+						<p style="font-size:10pt; position:absolute;">
+    							<%= f.label "Mensaje :" %><br/><br/>
+    							<%= f.text_area :mensaje, :rows => "8", :cols => "25" %>
+  							</p>
+						</div>
+						<div style="text-align:left; position:absolute; margin-top:-200px; padding:30px; padding-top:0; margin-left:-30px; font-size:10pt; ">
+						   <%= f.error_messages :header_message => "Por favor intente nuevamente", :message => "Existen los siguientes errores en los campos de:" %>
+						   </div>
+					<% end %>
+					</div>
+	</div>
+</div>
+</div>

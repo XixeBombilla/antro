@@ -1,0 +1,21 @@
+
+
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li><%= link_to 'Todos', galerias_path %></li>
+			<li><%= link_to 'Nueva Imagen', new_galeria_path %></li>
+			<li class="active"><%= link_to "Editando Imagen: #{@galeria.titulo}", "#" %></li>
+			
+		</ul>
+		
+	</div>
+	<div class="content">
+		<h2 class="title">
+			 <%=h @galeria.titulo %>
+		</h2>
+		<div class="inner">
+			<%= render :partial => 'form' %>
+		</div>
+	</div>
+</div>

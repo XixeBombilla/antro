@@ -1,0 +1,16 @@
+<% form_for(@musica, :html => { :multipart => true }) do |f| %>
+<%= f.error_messages :header_message => "Por favor intente nuevamente", :message => "Existen los siguientes errores en los campos de:" %>
+
+<p>
+  <%= f.label :titulo %><br />
+  <%= f.text_field :titulo %>
+</p>
+
+<p>Imagen: (Archivo MP3 Solo)<br />
+	<%= f.file_field :archivo %>
+</p>
+
+<p>
+  <%= f.submit 'Guardar' %>
+</p>
+<% end %>

@@ -1,0 +1,6 @@
+development:
+  adapter: mysql
+  database: nuit
+  user: root
+  password: 
+

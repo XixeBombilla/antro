@@ -1,0 +1,18 @@
+
+
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li><%= link_to 'Todos', musicas_path %></li>
+			<li class="active"><%= link_to 'Nueva Musica', "#" %></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2 class="title">
+			Nueva Musica
+		</h2>
+		<div class="inner">
+			<%= render :partial => 'form' %>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,19 @@
+<div id="loginCont">
+  <div style="padding:10px; width:400px; height:180px; margin-left:200px; text-align:right;">
+          <h4 style="color:#99cc33;">La Nuit Club Admin :</h4>
+          <% form_tag session_path do -%>
+          <p><%= label_tag 'Usuario' %>
+          <%= text_field_tag 'login', @login %></p>
+          
+          <p><%= label_tag 'Contrase&ntilde;a' %>
+          <%= password_field_tag 'password', nil %></p>
+          
+          <!-- Uncomment this if you want this functionality
+          <p><%= label_tag 'remember_me', 'Remember me' %>
+          <%= check_box_tag 'remember_me', '1', @remember_me %></p>
+          -->
+          
+          <p><%= submit_tag 'Log in' %></p>
+          <% end -%>
+  </div>
+</div>

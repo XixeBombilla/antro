@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Administraci&oacute;n Pagina Web</title>
+  <%= stylesheet_link_tag "web_app_theme", "web_app_theme_override", "themes/drastic-dark/style" %>
+
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><%= link_to image_tag("logo.png"), root_path %></h1>
+      <div id="user-navigation">
+        <ul class="wat-cf">
+			<% if logged_in? %>
+				<li><%= link_to_unless_current("Agregar Usuario", signup_path) {|link|	"<li class=\"active\"><a href='#'>Agregar Usuario</a></li>"}%></li>
+          		<li><%= link_to "Salir", logout_path, :class => "logout" %></li>
+			<% end %>
+        </ul>
+      </div>      
+      <div id="main-navigation">
+        <ul class="wat-cf">
+				<li><%= link_to_unless_current("Musica", musicas_path) {|link|
+				"<li class=\"active\"><a href='#'>Musica</a></li>"}%></li>
+				<li><%= link_to_unless_current("Eventos", eventos_path) {|link|
+				"<li class=\"active\"><a href='#'>Eventos</a></li>"}%></li>
+				<li><%= link_to_unless_current("Galeria", galerias_path) {|link|
+				"<li class=\"active\"><a href='#'>Galeria</a></li>"}%></li>
+				<li><%= link_to_unless_current("Mensajes", contactos_path) {|link|
+				"<li class=\"active\"><a href='#'>Mensajes</a></li>"}%></li>
+				
+        </ul>
+      </div>
+    </div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+        <% flash.each do |type, message| -%>
+          <div class="message <%= type %>">
+            <p><%= message %></p>
+          </div>
+        <% end -%>
+      </div>
+      <div id="main">
+        <%= yield %>
+        <div id="footer">
+          <div class="block">
+            <p>Copyright &copy; <%= Time.now.year %> Derechos Reservados.</p>
+          </div>      
+        </div>
+      </div>
+      <div id="sidebar">
+        <%= yield :sidebar %>
+      </div>
+    </div>    
+  </div>
+</body>
+</html>

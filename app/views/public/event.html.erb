@@ -1,0 +1,37 @@
+<script>	
+		 $(document).ready(function(){
+			$('#home').css({"visibility":"hidden"});
+			$('#abo').css({"visibility":"hidden"});
+			$('#eve').css({"visibility":"visible"});
+			$('#gal').css({"visibility":"hidden"});
+			$('#cont').css({"visibility":"hidden"});
+			$('#1 span').css({"color":"white","font-family":"schoolbook N"});
+			$('#2 span').css({"color":"white","font-family":"schoolbook N"});
+			$('#3 span').css({"color":"black","font-family":"schoolbook N"});
+			$('#4 span').css({"color":"white","font-family":"schoolbook N"});
+			$('#5 span').css({"color":"white","font-family":"schoolbook N"});
+			
+			});
+
+</script>
+
+<div id="contentEvent">
+		<div id="contenedorListaEventos"> 
+			<div id="makeMeScrollable">
+					<div class="scrollingHotSpotLeft"></div>
+					<div class="scrollingHotSpotRight"></div>
+					<div class="scrollWrapper">
+						<div class="scrollableArea">
+	<% for eventos in @eventos %>
+	
+			
+			<%= link_to (image_tag eventos.feventos.url(:thumb)), eventos.feventos.url(:medium), :class =>"cuadroEvento" , :title => eventos.descripcion , :rel =>"prettyPhoto[fotosEventos]" %>
+			
+     
+	<% end %>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+

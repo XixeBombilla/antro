@@ -1,0 +1,38 @@
+
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li class="active"><%= link_to 'Todos', eventos_path %></li>
+			<li><%= link_to 'Nuevo Evento', new_evento_path %></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2>Lista de Eventos</h2>
+		<div class="inner">
+			
+                       <table class="table">
+                          <tr>
+                            <th>Imagen</th>
+                            <th>Titulo</th>
+                            <th>Descripcion</th>
+                            <th>Acciones</th>
+                          </tr>
+                        
+                        <% @eventos.each do |evento| %>
+                          <tr  class="<%= cycle("even", "odd") %>">
+                            <td><%= image_tag evento.feventos.url(:thumb) %></td>
+                            <td><%=h link_to  evento.titulo, evento %></td>
+                            <td><%=h evento.descripcion %></td>
+                            <td>
+                            <%= link_to 'Editar', edit_evento_path(evento) %>
+                            <%= link_to 'Eliminar', evento, :confirm => 'Estas seguro?', :method => :delete %></td>
+                          </tr>
+                        <% end %>
+                        </table>
+                     
+			<br />
+
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,21 @@
+
+
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li><%= link_to 'Todos', eventos_path %></li>
+			<li><%= link_to 'Nuevo Evento', new_evento_path %></li>
+			<li class="active"><%= link_to "Editando Evento: #{@evento.titulo}", "#" %></li>
+			
+		</ul>
+		
+	</div>
+	<div class="content">
+		<h2 class="title">
+			 <%=h @evento.titulo %>
+		</h2>
+		<div class="inner">
+			<%= render :partial => 'form' %>
+		</div>
+	</div>
+</div>

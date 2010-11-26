@@ -1,0 +1,42 @@
+
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li><%= link_to 'Todos', contactos_path %></li>
+			<li class="active"><%= link_to "Editando Contacto: #{@contacto.nombre}", "#" %></li>
+			
+		</ul>
+		
+	</div>
+	<div class="content">
+		<h2 class="title">
+			 <%=h @contacto.nombre %>
+		</h2>
+		<div class="inner">
+			<% form_for(@contacto) do |f| %>
+                        <%= f.error_messages %>
+                      
+                        <p>
+                          <%= f.label :nombre %><br />
+                          <%= f.text_field :nombre %>
+                        </p>
+                        <p>
+                          <%= f.label :tel %><br />
+                          <%= f.text_field :tel %>
+                        </p>
+                        <p>
+                          <%= f.label :correo %><br />
+                          <%= f.text_field :correo %>
+                        </p>
+                        <p>
+                          <%= f.label :mensaje %><br />
+                          <%= f.text_field :mensaje %>
+                        </p>
+                        <p>
+                          <%= f.submit 'Actualizar' %>
+                        </p>
+                      <% end %>
+
+		</div>
+	</div>
+</div>

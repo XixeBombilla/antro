@@ -1,0 +1,37 @@
+
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li><%= link_to 'Todos', contactos_path %></li>
+			<li class="active"><%= link_to "#{@contacto.nombre.capitalize}", "#" %></li>
+			<li><%= link_to 'Editar', edit_contacto_path(@contacto) %></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2 class="title">
+		  <%=h @contacto.nombre.capitalize %>
+		</h2>
+		<div class="inner">
+			<p class="first">
+			  <b>Nombre:</b>
+                          <%=h @contacto.nombre %>
+                        </p>
+                        
+                        <p>
+                          <b>Tel:</b>
+                          <%=h @contacto.tel %>
+                        </p>
+                        
+                        <p>
+                          <b>Correo:</b>
+                          <%=h @contacto.correo %>
+                        </p>
+                        
+                        <p>
+                          <b>Mensaje:</b>
+                          <%=h @contacto.mensaje %>
+                        </p>
+
+		</div>
+	</div>
+</div>

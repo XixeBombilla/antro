@@ -1,0 +1,257 @@
+body {
+
+    background-image: url(../images/back.jpg);
+    color:white;
+    padding:0;
+    margin-top:0; 
+  	font-family:schoolbook;
+    
+}
+
+a:link{
+    color:#99cc33;;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#99cc33;;
+    text-decoration: underline;
+}
+
+
+a:visited{
+    color:#99cc33;;
+    text-decoration:none;
+}
+
+
+input {
+	background-color:#333;
+	color:#99cc33;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+select {
+	background-color:#333;
+	color:#fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	width:175px;
+	height:16pt;
+}
+
+textarea {
+	background-color:#333;
+	color:#fff;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+
+img{
+	border:none;
+	
+}
+
+@font-face {
+font-family: schoolbook;
+src: url("../schoolbook/AGSchoolbookRegular.ttf") format("opentype");
+}
+
+@font-face {
+font-family: schoolbook N;
+src: url("../schoolbook/AGSchoolbookMedium.ttf") format("opentype");
+}
+
+.cuadroMenu{
+    height:50px;;
+    text-align:center;
+    width:100px;
+    font-size:10pt; 
+    float:left; 
+}
+
+.cuadroMenu a:hover{
+    font-family:schoolbook N;
+    color:white;
+    text-decoration:none;
+}
+.cuadroMenu a:link{
+    color:white;
+    text-decoration:none;
+}
+
+
+
+.cuadroMenu a:visited{
+    color:white;
+    text-decoration:none;
+}
+
+#footer{
+    
+    height:150px;
+    text-align:center;
+    
+}
+#copy{text-align:center; font-size:8pt; padding-bottom:20px;}
+
+#contentAbout{
+	
+	margin-top:158px;
+	width:985px;
+	height:200px;
+	background-image: url(../images/backAbout.png);
+}
+
+#loginCont{
+	
+	margin-top:158px;
+	width:985px;
+	height:200px;
+	background-image: url(../images/backAbout.png);
+}
+
+#contentContact{
+	
+	margin-top:158px;
+	width:985px;
+	height:200px;
+	background-image: url(../images/backAbout.png);
+}
+
+
+#contentEvent{
+	
+	margin-top:158px;
+	width:985px;
+	height:200px;
+	background-image: url(../images/backAbout.png);
+}
+
+#contentGaleria{
+	
+	margin-top:158px;
+	width:985px;
+	height:200px;
+	background-image: url(../images/backAbout.png);
+}
+
+
+#contenedorListaEventos{
+	
+	height:180px;
+	padding:10px;
+	margin-left:210px;
+	width:560px;
+	
+}
+
+#contenedorListaGaleria{
+	
+	height:180px;
+	padding:10px;
+	width:780px;
+	margin-left:90px;
+	
+	
+}
+.currentTextHolder{color:black;}
+.pp_description{color:black;}
+
+.cuadroEvento{margin-right:10px; margin-left:10px; float:left; width:120px; height:180px;}
+
+#contenedorListaEventos img:hover{opacity:1;}
+#contenedorListaEventos img{opacity:.5; cursor:pointer;}
+
+.cuadroGaleria{margin-right:10px; margin-left:10px; float:left; width:240px; height:180px;}
+
+#contenedorListaGaleria img:hover{opacity:1;}
+#contenedorListaGaleria img{opacity:.5; cursor:pointer;}
+
+#contentHome{
+	
+	margin-top:235px;
+	width:985px;
+	height:46px;
+	background-image: url(../images/backHome.png);
+}
+
+#fondoMenu{
+    height:50px;
+    background-color:#000;
+    width:100%;
+    margin-top:-245px;
+margin-left:-1px;
+    
+    
+}
+
+
+
+#redSocial{
+    float:right;
+    margin-top:-30px;
+}
+
+#contentGeneral{
+    
+    margin:auto;
+    width:985px;
+    
+    
+}
+
+#logo{
+    margin:auto;
+    height:90px;
+    width:100%;
+    text-align:center;
+    background-image: url(../images/blur.png);
+    
+}
+
+#menucenter{
+    margin:auto;
+margin-top:-5px;
+    width:500px;
+
+}
+
+#cuadrosCenter{
+    margin:auto;
+margin-top:0;
+    width:500px;
+    padding-left:40px;
+
+}
+
+#menu{
+    
+    text-align:center;
+    height:50px;
+    
+}
+
+#frontimg{
+    height:516px;
+     margin-top:-516px;
+      position:absolute;
+      z-index:1000;
+    
+}
+
+#galeria{
+    height:516px;
+}
+
+#info{
+    z-index:2000;
+    height:516px;
+     margin-top:-516px;
+     position:absolute;
+     z-index:1001;
+    
+}

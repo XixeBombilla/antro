@@ -1,0 +1,36 @@
+
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li class="active"><%= link_to 'Todos', contactos_path %></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2>Lista de Mensajes</h2>
+		<div class="inner">
+			
+                       <table class="table">
+                           <tr>
+                          <th>Nombre</th>
+                          <th>Mensaje</th>
+                          <th>Acciones</th>
+                        </tr>
+                      
+                      <% @contactos.each do |contacto| %>
+                        <tr  class="<%= cycle("even", "odd") %>">
+                          <td><%=h link_to contacto.nombre,contacto %></td>
+                          <td><%=h contacto.mensaje %></td>
+                          <td><%= link_to 'Editar', edit_contacto_path(contacto) %>
+                          <%= link_to 'Eliminar', contacto, :confirm => 'Estas Seguro?', :method => :delete %></td>
+                        </tr>
+                      <% end %>
+                      </table>
+						<div class="pagination" style="float:right;">
+						 <%= will_paginate @contactos, :container => false, :prev_label => "< Anterior ", :next_label => " Siguiente >" %>	    
+						</div>
+                      
+	<br/>
+
+		</div>
+	</div>
+</div>

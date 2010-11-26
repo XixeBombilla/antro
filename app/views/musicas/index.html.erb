@@ -1,0 +1,31 @@
+
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li class="active"><%= link_to 'Todos', musicas_path %></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2>Lista de Canciones</h2>
+		<div class="inner">
+			
+                        <table  class="table">
+                        <tr>
+                          <th>Titulo</th>
+                          <th>Acciones</th>
+                        </tr>
+                      
+                      <% @musicas.each do |musica| %>
+                        <tr  class="<%= cycle("even", "odd") %>">
+                          <td><%=link_to musica.titulo, musica %></td>
+                          <td><%= link_to 'Editar', edit_musica_path(musica) %></td>
+                        </tr>
+                      <% end %>
+                      </table>
+                    
+		      
+
+
+		</div>
+	</div>
+</div>

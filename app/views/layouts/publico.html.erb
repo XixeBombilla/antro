@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <%= stylesheet_link_tag 'estilos',"nivo-slider","prettyPhoto","smoothDivScroll" %>
+    <%= javascript_include_tag "jquery-1.4.3.min","jquery.nivo.slider","loopedslider","jquery.prettyPhoto","jquery-ui-1.8.6.custom.min","jquery.smoothDivScroll-1.1-min" %>
+    
+    <title>.: LaNuit :.</title>
+    
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#galeria').nivoSlider({
+        effect:'sliceDown', //Specify sets like: 'fold,fade,sliceDown'
+        slices:15,
+        animSpeed:1000, //Slide transition speed
+        pauseTime:3000,
+        startSlide:0, //Set starting Slide (0 index)
+        directionNav:false, //Next & Prev
+        directionNavHide:false, //Only show on hover
+        controlNav:false, //1,2,3...
+        controlNavThumbs:false, //Use thumbnails for Control Nav
+        controlNavThumbsFromRel:false, //Use image rel for thumbs
+        controlNavThumbsSearch: '.jpg', //Replace this with...
+        controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+        keyboardNav:true, //Use left & right arrows
+        pauseOnHover:true, //Stop animation while hovering
+        manualAdvance:false, //Force manual transitions
+        captionOpacity:0.8, //Universal caption opacity
+        beforeChange: function(){},
+        afterChange: function(){},
+        slideshowEnd: function(){}, //Triggers after all slides have been shown
+        lastSlide: function(){}, //Triggers when last slide is shown
+        afterLoad: function(){} //Triggers when slider has loaded
+    });
+    });
+    </script>
+    <script>
+		$(function(){
+			$('#loopedslider').loopedSlider({
+				autoHeight: true,
+				containerClick: false
+			});
+			
+			$(".cuadroEvento,.cuadroGaleria").prettyPhoto({theme:'facebook'});
+			
+			$("div#makeMeScrollable").smoothDivScroll({});
+			
+		});
+		
+		 $(document).ready(function(){
+						$("#menucenter li").prepend("<span></span>");
+
+						$("#menucenter li").each(function(){
+							var linkText = $(this).find("a").html();
+							$(this).find("span").show().html(linkText);
+						});
+
+						$("#menucenter li").hover(function(){
+							$(this).find("span").stop().animate({
+								marginTop: "-50"}, 250);
+						}, function(){
+							$(this).find("span").stop().animate({
+								marginTop:"0"
+							},250);
+						});
+						
+					
+					});
+		
+	</script>
+    <style>
+		/*
+		 * Required 
+		*/
+		.container {
+			width:500px;
+			height:180px;
+			overflow:hidden;
+			position:relative;
+		}
+		.slides {
+			position:absolute;
+			top:0;
+			left:0;
+		}
+		.slides > div {
+			position:absolute;
+			top:0;
+			width:500px;
+                        height:180px;
+			padding:20px;
+			display:none;
+		}
+		
+                .slides div p {
+			font-size:11pt;
+		}
+		
+		#makeMeScrollable
+				{
+					width:100%;
+					position: relative;
+				}
+
+				#makeMeScrollable div.scrollableArea 
+				{
+					position: relative;
+					float: left;
+					margin: 0;
+					padding: 0;
+				}
+		
+							ul#menucenter li{
+								overflow:hidden;
+								margin:0;
+							}
+							ul#menucenter a, ul#menucenter span{
+								float:left;
+								text-decoration: none;
+								clear:both;
+								padding-top:16px;
+								padding-bottom:20px;
+								width:100px;
+							}
+							ul#menucenter a{
+								
+								background-position: left bottom;
+								text-decoration: blink;
+								background-color:#99cc33;
+								color:#000;
+								font-family:schoolbook N;
+								display:block;
+							}
+							
+		
+	</style>
+    
+</head>
+<body>
+    
+    <div id="contentGeneral">
+        
+        <div id="head">
+            <div id="logo"> <%= link_to image_tag("logo.png"), root_path, :style =>"padding-left:30px;"%></div>
+           
+        </div>
+         <div id="redSocial">
+                
+		<%= link_to "login", login_path%>
+		<a href="http://www.facebook.com/pages/Leon-Mexico/La-Nuit-GlamClub/146842108668015"><%= image_tag ("facebook.png")%></a>
+        <a href="http://twitter.com/lanuitglamclub"><%= image_tag ("twitter.png")%></a>
+		
+                
+            </div>
+        <div id="content">
+              
+           
+            <div id="galeria" class="nivoSlider">
+                
+                <img src="../imagenesFondo/1.jpg" alt="" />
+                <img src="../imagenesFondo/2.jpg" alt=""  />
+                <img src="../imagenesFondo/1.jpg" alt="" />
+                <img src="../imagenesFondo/2.jpg" alt="" />
+            
+            </div>
+            <div id="frontimg"><%= image_tag ("frontimg.png")%></div>
+             <div id="info">
+                <%= yield  %>
+            </div>
+    
+        </div>
+        
+        <div id="menu">
+            <ul id="menucenter">
+                <li class="cuadroMenu" id="1"><%= link_to "HOME",root_path%></li>
+                <li class="cuadroMenu" id="2"><%= link_to "ABOUT US", about_path%></li>
+                <li class="cuadroMenu" id="3"><%= link_to "EVENTS", event_path%></li>
+                <li class="cuadroMenu" id="4"><%= link_to "GALLERY", gallery_path%></li>
+                <li class="cuadroMenu" id="5"><%= link_to "CONTACT US", new_contacto_path%></li>
+            </ul>
+            
+        </div>
+        
+        <div id="footer">
+            <p style="font-size:9pt; padding-top:20px;">MUSIC ALL NIGHT LONG</p>
+            <div style="margin-top:-40px;">
+			<object type="application/x-shockwave-flash" data="../mpsPlayer.swf" width="300px" height="150px"  >
+			    <param name="movie" value="../mpsPlayer.swf" />
+			    <param name="quality" value="high"/>
+			    <param name="wmode" value="transparent"/>
+	    </object>
+			</div>
+            
+        </div>
+        <div id="copy">&copy; Copyright 2010 LaNuit Glam Club. All right reserves Web design and development by Colectivo Urbano Photography by <a href="http://www.urbancol.com">Colectivo Urbano</a>.</div>
+
+        
+    </div>
+    <div id="fondoMenu">
+	<div id="cuadrosCenter">
+    	<div id="home" style="visibility:hidden;  background-color:#99cc33; width:100px; height:50px;"></div>
+    	<div id="abo"  style="visibility:hidden; margin-left:100px;  margin-top:-50px; background-color:#99cc33; width:100px; height:50px;"></div>
+    	<div id="eve"  style="visibility:hidden; margin-left:200px;  margin-top:-50px; background-color:#99cc33; width:100px; height:50px;"></div>
+    	<div id="gal"  style="visibility:hidden; margin-left:300px;  margin-top:-50px; background-color:#99cc33; width:100px; height:50px;"></div>
+    	<div id="cont"  style="visibility:hidden; margin-left:400px; margin-top:-50px; background-color:#99cc33; width:100px; height:50px;"></div>
+	</div>
+    </div>
+    
+</body>
+</html>
