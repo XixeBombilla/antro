@@ -1,1 +1,6 @@
 config/database.yml
+log/*
+.DS_Store
+public/system/*
+public/fotosEvento/*
+public/fotosGaleria/*
