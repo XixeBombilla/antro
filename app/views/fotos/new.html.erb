@@ -1,0 +1,21 @@
+<h1>Nueva foto</h1>
+
+<% form_for(@foto, :html => { :multipart => true }) do |f| %>
+
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </p>
+
+  <p>
+    <%= f.label :imagen %><br />
+    <%= f.file_field :imagen %>
+  </p>
+  <p>
+    <%= f.submit 'Guardar' %>
+  </p>
+<% end %>
+
+<%= link_to 'Regresar', fotos_path %>
