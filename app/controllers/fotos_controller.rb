@@ -5,7 +5,7 @@ class FotosController < ApplicationController
   before_filter :login_required
  layout "admin"
   def index
-    @fotos = Foto.all
+    @fotos = Foto.all.reverse
 
     respond_to do |format|
       format.html # index.html.erb

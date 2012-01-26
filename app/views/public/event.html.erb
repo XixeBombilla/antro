@@ -22,7 +22,7 @@
 	<% for eventos in @eventos %>
 	
 			
-			<%= link_to (image_tag eventos.feventos.url(:thumb)), eventos.feventos.url(:medium), :class =>"cuadroEvento" , :title => eventos.descripcion.downcase , :rel =>"prettyPhoto[fotosEventos]" %>
+			<%= link_to (image_tag eventos.feventos.url(:thumb)), eventos.feventos.url(:medium), :class =>"cuadroEvento" , :title => "" , :rel =>"prettyPhoto[fotosEventos]" %>
 			
      
 	<% end %>

@@ -22,7 +22,7 @@
 					<% for foto in @fotos %>
 
 
-							<%= link_to (image_tag foto.imagen.url(:thumb)), foto.imagen.url(:medium), :class =>"cuadroGaleria" , :title => foto.titulo , :rel =>"prettyPhoto[fotosGaleria]" %>
+							<%= link_to (image_tag foto.imagen.url(:thumb)), foto.imagen.url(:medium), :class =>"cuadroGaleria" , :title => "" , :rel =>"prettyPhoto[fotosGaleria]" %>
 
 
 					<% end %>
