@@ -4,7 +4,7 @@ class EventosController < ApplicationController
   before_filter :login_required
   layout "admin"
   def index
-    @eventos = Evento.all.reverse
+    @eventos = Evento.all
 
     respond_to do |format|
       format.html # index.html.erb

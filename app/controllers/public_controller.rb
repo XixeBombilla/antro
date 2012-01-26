@@ -8,21 +8,18 @@ class PublicController < ApplicationController
   end
   
   def event
-    
-    @eventos= Evento.all
-   
-    
+    @eventos= Evento.all.reverse
   end
   
   def gallery
     
-    @galeriasT= Galeria.all
+    @galeriasT= Galeria.all.reverse
    
     
   end
   
   def photo
-    @fotos = Foto.all
+    @fotos = Foto.all.reverse
   end
   
 end
