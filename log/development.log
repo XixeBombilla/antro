@@ -59274,3 +59274,314 @@ ActionController::RoutingError (No route matches "/stylesheets/images/cursors/cu
   /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+DEPRECATION WARNING: Object#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /Users/gize/.rvm/gems/ruby-1.8.7-p352/gems/will_paginate-2.3.11/lib/will_paginate.rb:39)
+
+
+Processing PublicController#photo (for 127.0.0.1 at 2012-01-25 18:43:47) [GET]
+  [4;36;1mFoto Load (0.6ms)[0m   [0;1mSELECT * FROM "fotos" [0m
+Rendering template within layouts/publico
+Rendering public/photo
+  [4;35;1mSlider Load (0.2ms)[0m   [0mSELECT * FROM "sliders" [0m
+Completed in 36ms (View: 30, DB: 1) | 200 OK [http://localhost/photo]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-01-25 18:43:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/big_transparent.gif" with {:method=>:get}):
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-01-25 18:43:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/cursors/cursor_arrow_left.cur" with {:method=>:get}):
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-01-25 18:43:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/cursors/cursor_arrow_left.cur" with {:method=>:get}):
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-01-25 18:43:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/cursors/cursor_arrow_right.cur" with {:method=>:get}):
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-01-25 18:43:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/cursors/cursor_arrow_right.cur" with {:method=>:get}):
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContactosController#new (for 127.0.0.1 at 2012-01-25 18:43:53) [GET]
+Rendering template within layouts/publico
+Rendering contactos/new
+  [4;36;1mSlider Load (0.3ms)[0m   [0;1mSELECT * FROM "sliders" [0m
+Completed in 28ms (View: 22, DB: 0) | 200 OK [http://localhost/contactos/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-01-25 18:43:53) [GET]
+
+ActionController::RoutingError (No route matches "/contactos/system/archivos/1/original/1.mp3" with {:method=>:get}):
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MusicasController#index (for 127.0.0.1 at 2012-01-25 18:43:58) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mMusica Load (0.5ms)[0m   [0;1mSELECT * FROM "musicas" [0m
+Rendering template within layouts/admin
+Rendering musicas/index
+Completed in 35ms (View: 21, DB: 1) | 200 OK [http://localhost/musicas]
+
+
+Processing MusicasController#edit (for 127.0.0.1 at 2012-01-25 18:44:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mMusica Load (0.2ms)[0m   [0;1mSELECT * FROM "musicas" WHERE ("musicas"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering musicas/edit
+Rendered musicas/_form (5.5ms)
+Completed in 110ms (View: 17, DB: 1) | 200 OK [http://localhost/musicas/1/edit]
+
+
+Processing MusicasController#update (for 127.0.0.1 at 2012-01-25 18:44:11) [PUT]
+  Parameters: {"commit"=>"Guardar", "authenticity_token"=>"4nQr4OmYaSdRsqBtmPZCUV/bb+VY1ur5HhJo1zXlkZk=", "id"=>"1", "musica"=>{"archivo"=>#<File:/var/folders/n6/xwtw552n3qs9lcgh7h1djyvc0000gp/T/RackMultipart20120125-18248-1ejekq4-0>, "titulo"=>"Musica 1"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mMusica Load (0.2ms)[0m   [0;1mSELECT * FROM "musicas" WHERE ("musicas"."id" = 1) [0m
+  [4;35;1mMusica Update (0.5ms)[0m   [0mUPDATE "musicas" SET "updated_at" = '2012-01-26 00:44:12', "archivo_updated_at" = '2012-01-26 00:44:12', "archivo_content_type" = 'audio/mp3', "archivo_file_name" = '2NE1 I AM THE BEST Choreography Practice (Uncut Ver.).MP3', "archivo_file_size" = 5007046 WHERE "id" = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /Users/gize/Desktop/antro/public/system/archivos/1/original/1.mp3
+[paperclip] saving /Users/gize/Desktop/antro/public/system/archivos/1/original/2NE1 I AM THE BEST Choreography Practice (Uncut Ver.).MP3
+Redirected to http://localhost:3000/musicas/1
+Completed in 318ms (DB: 1) | 302 Found [http://localhost/musicas/1]
+
+
+Processing MusicasController#show (for 127.0.0.1 at 2012-01-25 18:44:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mMusica Load (0.3ms)[0m   [0mSELECT * FROM "musicas" WHERE ("musicas"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering musicas/show
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/musicas/1]
+
+
+Processing ContactosController#new (for 127.0.0.1 at 2012-01-25 18:44:16) [GET]
+Rendering template within layouts/publico
+Rendering contactos/new
+  [4;36;1mSlider Load (0.3ms)[0m   [0;1mSELECT * FROM "sliders" [0m
+Completed in 23ms (View: 17, DB: 0) | 200 OK [http://localhost/contactos/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-01-25 18:44:17) [GET]
+
+ActionController::RoutingError (No route matches "/contactos/system/archivos/1/original/1.mp3" with {:method=>:get}):
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MusicasController#index (for 127.0.0.1 at 2012-01-25 18:45:01) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mMusica Load (0.5ms)[0m   [0;1mSELECT * FROM "musicas" [0m
+Rendering template within layouts/admin
+Rendering musicas/index
+Completed in 23ms (View: 10, DB: 1) | 200 OK [http://localhost/musicas]
+
+
+Processing MusicasController#edit (for 127.0.0.1 at 2012-01-25 18:45:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mMusica Load (0.2ms)[0m   [0;1mSELECT * FROM "musicas" WHERE ("musicas"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering musicas/edit
+Rendered musicas/_form (4.2ms)
+Completed in 22ms (View: 8, DB: 0) | 200 OK [http://localhost/musicas/1/edit]
+
+
+Processing MusicasController#update (for 127.0.0.1 at 2012-01-25 18:45:11) [PUT]
+  Parameters: {"commit"=>"Guardar", "authenticity_token"=>"4nQr4OmYaSdRsqBtmPZCUV/bb+VY1ur5HhJo1zXlkZk=", "id"=>"1", "musica"=>{"archivo"=>#<File:/var/folders/n6/xwtw552n3qs9lcgh7h1djyvc0000gp/T/RackMultipart20120125-18248-1v16u5v-0>, "titulo"=>"Musica 1"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mMusica Load (0.2ms)[0m   [0;1mSELECT * FROM "musicas" WHERE ("musicas"."id" = 1) [0m
+  [4;35;1mMusica Update (0.4ms)[0m   [0mUPDATE "musicas" SET "updated_at" = '2012-01-26 00:45:11', "archivo_updated_at" = '2012-01-26 00:45:11', "archivo_file_name" = '1.mp3' WHERE "id" = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /Users/gize/Desktop/antro/public/system/archivos/1/original/2NE1 I AM THE BEST Choreography Practice (Uncut Ver.).MP3
+[paperclip] saving /Users/gize/Desktop/antro/public/system/archivos/1/original/1.mp3
+Redirected to http://localhost:3000/musicas/1
+Completed in 366ms (DB: 1) | 302 Found [http://localhost/musicas/1]
+
+
+Processing MusicasController#show (for 127.0.0.1 at 2012-01-25 18:45:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mMusica Load (0.2ms)[0m   [0mSELECT * FROM "musicas" WHERE ("musicas"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering musicas/show
+Completed in 177ms (View: 162, DB: 0) | 200 OK [http://localhost/musicas/1]
+
+
+Processing ContactosController#new (for 127.0.0.1 at 2012-01-25 18:45:17) [GET]
+Rendering template within layouts/publico
+Rendering contactos/new
+  [4;36;1mSlider Load (0.3ms)[0m   [0;1mSELECT * FROM "sliders" [0m
+Completed in 21ms (View: 16, DB: 0) | 200 OK [http://localhost/contactos/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-01-25 18:45:18) [GET]
+
+ActionController::RoutingError (No route matches "/contactos/system/archivos/1/original/1.mp3" with {:method=>:get}):
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/gize/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PublicController#index (for 127.0.0.1 at 2012-01-25 18:45:24) [GET]
+Rendering template within layouts/publico
+Rendering public/index
+  [4;35;1mSlider Load (0.6ms)[0m   [0mSELECT * FROM "sliders" [0m
+Completed in 16ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2012-01-25 18:45:34) [GET]
+Rendering template within layouts/publico
+Rendering public/index
+  [4;36;1mSlider Load (0.6ms)[0m   [0;1mSELECT * FROM "sliders" [0m
+Completed in 14ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MusicasController#index (for 127.0.0.1 at 2012-01-25 18:45:57) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mMusica Load (0.6ms)[0m   [0;1mSELECT * FROM "musicas" [0m
+Rendering template within layouts/admin
+Rendering musicas/index
+Completed in 25ms (View: 11, DB: 1) | 200 OK [http://localhost/musicas]
+
+
+Processing MusicasController#edit (for 127.0.0.1 at 2012-01-25 18:45:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mMusica Load (0.2ms)[0m   [0;1mSELECT * FROM "musicas" WHERE ("musicas"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering musicas/edit
+Rendered musicas/_form (4.5ms)
+Completed in 23ms (View: 9, DB: 1) | 200 OK [http://localhost/musicas/1/edit]
+
+
+Processing MusicasController#update (for 127.0.0.1 at 2012-01-25 18:46:07) [PUT]
+  Parameters: {"commit"=>"Guardar", "authenticity_token"=>"4nQr4OmYaSdRsqBtmPZCUV/bb+VY1ur5HhJo1zXlkZk=", "id"=>"1", "musica"=>{"archivo"=>#<File:/var/folders/n6/xwtw552n3qs9lcgh7h1djyvc0000gp/T/RackMultipart20120125-18248-15zqdd7-0>, "titulo"=>"Musica 1"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mMusica Load (0.2ms)[0m   [0;1mSELECT * FROM "musicas" WHERE ("musicas"."id" = 1) [0m
+  [4;35;1mMusica Update (0.4ms)[0m   [0mUPDATE "musicas" SET "updated_at" = '2012-01-26 00:46:08', "archivo_updated_at" = '2012-01-26 00:46:07' WHERE "id" = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /Users/gize/Desktop/antro/public/system/archivos/1/original/1.mp3
+[paperclip] saving /Users/gize/Desktop/antro/public/system/archivos/1/original/1.mp3
+Redirected to http://localhost:3000/musicas/1
+Completed in 324ms (DB: 1) | 302 Found [http://localhost/musicas/1]
+
+
+Processing MusicasController#show (for 127.0.0.1 at 2012-01-25 18:46:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mMusica Load (0.2ms)[0m   [0mSELECT * FROM "musicas" WHERE ("musicas"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering musicas/show
+Completed in 19ms (View: 4, DB: 0) | 200 OK [http://localhost/musicas/1]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2012-01-25 18:46:17) [GET]
+Rendering template within layouts/publico
+Rendering public/index
+  [4;36;1mSlider Load (0.6ms)[0m   [0;1mSELECT * FROM "sliders" [0m
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2012-01-25 18:46:52) [GET]
+Rendering template within layouts/publico
+Rendering public/index
+  [4;35;1mSlider Load (0.7ms)[0m   [0mSELECT * FROM "sliders" [0m
+Completed in 16ms (View: 13, DB: 1) | 200 OK [http://localhost/]
