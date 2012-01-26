@@ -28,7 +28,10 @@
 				"<li class=\"active\"><a href='#'>Galeria</a></li>"}%></li>
 				<li><%= link_to_unless_current("Mensajes", contactos_path) {|link|
 				"<li class=\"active\"><a href='#'>Mensajes</a></li>"}%></li>
-				
+				<li><%= link_to_unless_current("Fotos", fotos_path) {|link|
+				"<li class=\"active\"><a href='#'>Fotos</a></li>"}%></li>
+				<li><%= link_to_unless_current("Slides", sliders_path) {|link|
+				"<li class=\"active\"><a href='#'>Slides</a></li>"}%></li>
         </ul>
       </div>
     </div>    

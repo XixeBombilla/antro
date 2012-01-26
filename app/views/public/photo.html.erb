@@ -1,0 +1,33 @@
+<script>	
+		 $(document).ready(function(){
+			$('#home').css({"visibility":"hidden"});
+			$('#abo').css({"visibility":"hidden"});
+			$('#eve').css({"visibility":"hidden"});
+			$('#gal').css({"visibility":"hidden"});
+			$('#cont').css({"visibility":"hidden"});
+			$('#pho').css({"visibility":"visible"});
+			$('#6 span').css({"color":"black","font-family":"schoolbook "});
+			
+			});
+
+</script>
+
+<div id="contentGaleria">
+	<div id="contenedorListaGaleria"> 
+	<div id="makeMeScrollable">
+			<div class="scrollingHotSpotLeft"></div>
+			<div class="scrollingHotSpotRight"></div>
+			<div class="scrollWrapper">
+				<div class="scrollableArea">
+					<% for foto in @fotos %>
+
+
+							<%= link_to (image_tag foto.imagen.url(:thumb)), foto.imagen.url(:medium), :class =>"cuadroGaleria" , :title => foto.titulo , :rel =>"prettyPhoto[fotosGaleria]" %>
+
+
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,35 @@
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li><%= link_to 'Todos', sliders_path %></li>
+			<li><%= link_to 'Nuevo Slide', new_slider_path %></li>
+			<li class="active"><%= link_to "Editando Slide: #{@slider.titulo}", "#" %></li>
+			
+		</ul>
+		
+	</div>
+	<div class="content">
+		<h2 class="title">
+			 <%=h @slider.titulo %>
+		</h2>
+		<div class="inner">
+			<% form_for(@slider, :html => { :multipart => true }) do |f| %>
+
+			  <%= f.error_messages %>
+
+			  <p>
+			    <%= f.label :titulo %><br />
+			    <%= f.text_field :titulo %>
+			  </p>
+			  <p>
+			    <%= f.label :imagen %><br />
+			    <%= f.file_field :imagen %>
+			  </p>
+			  <p>
+			    <%= f.submit 'Actualizar' %>
+			  </p>
+			<% end %>
+		</div>
+	</div>
+</div>
+

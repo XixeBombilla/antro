@@ -1,0 +1,36 @@
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li class="active"><%= link_to 'Todos', sliders_path %></li>
+			<li><%= link_to 'Nuevo Slider', new_slider_path %></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2>Lista de Fotos</h2>
+		<div class="inner">
+			
+                       <table class="table">
+			 <tr>
+			  <th>Imagen</th>
+			  <th>Titulo</th>
+			  <th>Acciones</th>
+			</tr>
+		      
+		      <% @sliders.each do |slider| %>
+			<tr  class="<%= cycle("even", "odd") %>">
+			      <td><%= image_tag slider.imagen.url(:thumb) %></td>
+			  <td><%=h link_to  slider.titulo,slider %></td>
+			  <td>
+			  <%= link_to 'Editar', edit_slider_path(slider) %>
+			  <%= link_to 'Eliminar', slider, :confirm => 'Estas Seguro?', :method => :delete %></td>
+			</tr>
+		      <% end %>
+		      </table>
+                      
+                     
+			<br />
+
+
+		</div>
+	</div>
+</div>
