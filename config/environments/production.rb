@@ -30,5 +30,5 @@ ActionMailer::Base.delivery_method = :sendmail
 
 ActionMailer::Base.sendmail_settings = {
   :location       => '/usr/sbin/sendmail',
-  :arguments      => '-i -t -f la.nuit@live.com '
+  :arguments      => '-i -t -f andresramirezmorales@hotmail.com '
 }
