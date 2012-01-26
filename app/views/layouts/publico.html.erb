@@ -4,8 +4,8 @@
 <head>
     
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <%= stylesheet_link_tag 'estilos',"nivo-slider","prettyPhoto","smoothDivScroll" %>
-    <%= javascript_include_tag "jquery-1.4.3.min","jquery.nivo.slider","loopedslider","jquery.prettyPhoto","jquery-ui-1.8.6.custom.min","jquery.smoothDivScroll-1.1-min" %>
+    <%= stylesheet_link_tag 'estilos',"nivo-slider","smoothDivScroll","zoombox" %>
+    <%= javascript_include_tag "jquery-1.4.3.min","jquery.nivo.slider","loopedslider","jquery-ui-1.8.6.custom.min","jquery.smoothDivScroll-1.1-min","zoombox" %>
     
     <title>.: LaNuit :.</title>
     
@@ -33,7 +33,7 @@
         slideshowEnd: function(){}, //Triggers after all slides have been shown
         lastSlide: function(){}, //Triggers when last slide is shown
         afterLoad: function(){} //Triggers when slider has loaded
-    });
+    	});
     });
     </script>
     <script>
@@ -43,11 +43,8 @@
 				containerClick: false
 			});
 			
-			$(".cuadroEvento,.cuadroGaleria").prettyPhoto({
-				theme:'facebook',
-				show_title: false
-				
-				});
+			
+			$('.cuadroEvento,.cuadroGaleria').zoombox();
 			
 			$("div#makeMeScrollable").smoothDivScroll({});
 			
@@ -132,9 +129,9 @@
 								
 								background-position: left bottom;
 								text-decoration: blink;
-								background-color:#99cc33;
+								background:url(../images/hoverM.png);
 								color:#000;
-								font-family:schoolbook N;
+								font-family:schoolbook;
 								display:block;
 							}
 							
@@ -147,12 +144,12 @@
     <div id="contentGeneral">
         
         <div id="head">
-            <div id="logo"> <%= link_to image_tag("logo.png"), root_path, :style =>"padding-left:30px;"%></div>
+            <div id="logo"> <%= link_to image_tag("logo.png"), root_path%></div>
            
         </div>
          <div id="redSocial">
                 
-		<%= link_to "login", login_path%>
+		
 		<a href="http://www.facebook.com/pages/Leon-Mexico/La-Nuit-GlamClub/146842108668015"><%= image_tag ("facebook.png")%></a>
         <a href="http://twitter.com/lanuitglamclub"><%= image_tag ("twitter.png")%></a>
 		
@@ -162,16 +159,12 @@
               
            
             <div id="galeria" class="nivoSlider">
-                
-                <img src="../imagenesFondo/1.jpg" alt="" />
-                <img src="../imagenesFondo/2.jpg" alt=""  />
-                <img src="../imagenesFondo/3.jpg" alt="" />
-                <img src="../imagenesFondo/4.jpg" alt="" />
-				<img src="../imagenesFondo/5.jpg" alt="" />
-                <img src="../imagenesFondo/6.jpg" alt="" />
+				<% todo_slide.each do |slide|%>
+					<%= image_tag slide.imagen.url(:medium)%>
+				
+				<%end%>
             
             </div>
-            <div id="frontimg"><%= image_tag ("frontimg.png")%></div>
              <div id="info">
                 <%= yield  %>
             </div>
@@ -185,6 +178,7 @@
                 <li class="cuadroMenu" id="3"><%= link_to "EVENTS", event_path%></li>
                 <li class="cuadroMenu" id="4"><%= link_to "GALLERY", gallery_path%></li>
                 <li class="cuadroMenu" id="5"><%= link_to "CONTACT US", new_contacto_path%></li>
+				<li class="cuadroMenu" id="6"><%= link_to "PHOTOS", photo_path%></li>
             </ul>
             
         </div>
@@ -200,17 +194,18 @@
 			</div>
             
         </div>
-        <div id="copy">&copy; Copyright 2010 LaNuit Glam Club. All right reserves Web design and development by Colectivo Urbano Photography by <a href="http://www.urbancol.com">Colectivo Urbano</a>.</div>
+        <div id="copy">&copy; Copyright 2010 LaNuit Glam Club. All right reserves Web design and development by Colectivo Urbano Photography by <a href="http://www.urbancol.com">Colectivo Urbano</a>. &nbsp;|&nbsp; <%= link_to "login", login_path%></div>
 
         
     </div>
     <div id="fondoMenu">
 	<div id="cuadrosCenter">
-    	<div id="home" style="visibility:hidden;  background-color:#99cc33; width:100px; height:50px;"></div>
-    	<div id="abo"  style="visibility:hidden; margin-left:100px;  margin-top:-50px; background-color:#99cc33; width:100px; height:50px;"></div>
-    	<div id="eve"  style="visibility:hidden; margin-left:200px;  margin-top:-50px; background-color:#99cc33; width:100px; height:50px;"></div>
-    	<div id="gal"  style="visibility:hidden; margin-left:300px;  margin-top:-50px; background-color:#99cc33; width:100px; height:50px;"></div>
-    	<div id="cont"  style="visibility:hidden; margin-left:400px; margin-top:-50px; background-color:#99cc33; width:100px; height:50px;"></div>
+    	<div id="home" style="visibility:hidden;  background:url(../images/hoverM.png); width:100px; height:50px;"></div>
+    	<div id="abo"  style="visibility:hidden; margin-left:100px;  margin-top:-50px; background:url(../images/hoverM.png); width:100px; height:50px;"></div>
+    	<div id="eve"  style="visibility:hidden; margin-left:200px;  margin-top:-50px; background:url(../images/hoverM.png); width:100px; height:50px;"></div>
+    	<div id="gal"  style="visibility:hidden; margin-left:300px;  margin-top:-50px; background:url(../images/hoverM.png); width:100px; height:50px;"></div>
+    	<div id="cont"  style="visibility:hidden; margin-left:400px; margin-top:-50px; background:url(../images/hoverM.png); width:100px; height:50px;"></div>
+<div id="pho"  style="visibility:hidden; margin-left:500px; margin-top:-50px; background:url(../images/hoverM.png); width:100px; height:50px;"></div>
 	</div>
     </div>
     

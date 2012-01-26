@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :sliders
+
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
@@ -7,6 +9,7 @@ ActionController::Routing::Routes.draw do |map|
   map.about 'about', :controller => "public", :action => "about"
   map.event 'event', :controller => "public", :action => "event"
   map.gallery 'gallery', :controller => "public", :action => "gallery"
+  map.photo 'photo', :controller => "public", :action => "photo"
 
   map.resources :users
   map.resource :session

@@ -3,10 +3,10 @@
 			$('#home').css({"visibility":"hidden"});
 			$('#abo').css({"visibility":"hidden"});
 			$('#eve').css({"visibility":"hidden"});
-			$('#gal').css({"visibility":"visible"});
+			$('#gal').css({"visibility":"hidden"});
 			$('#cont').css({"visibility":"hidden"});
-			$('#pho').css({"visibility":"hidden"});
-			$('#4 span').css({"color":"black","font-family":"schoolbook "});
+			$('#pho').css({"visibility":"visible"});
+			$('#6 span').css({"color":"black","font-family":"schoolbook "});
 			
 			});
 
@@ -19,10 +19,10 @@
 			<div class="scrollingHotSpotRight"></div>
 			<div class="scrollWrapper">
 				<div class="scrollableArea">
-					<% for galeria in @galeriasT %>
+					<% for foto in @fotos %>
 
 
-							<%= link_to (image_tag galeria.fgaleria.url(:thumb)), galeria.fgaleria.url(:medium), :class =>"cuadroGaleria" , :title => galeria.descripcion , :rel =>"prettyPhoto[fotosGaleria]" %>
+							<%= link_to (image_tag foto.imagen.url(:thumb)), foto.imagen.url(:medium), :class =>"cuadroGaleria" , :title => foto.titulo , :rel =>"prettyPhoto[fotosGaleria]" %>
 
 
 					<% end %>
@@ -31,4 +31,3 @@
 		</div>
 	</div>
 </div>
-

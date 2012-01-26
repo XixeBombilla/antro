@@ -1,21 +1,33 @@
-<h1>Nueva foto</h1>
 
-<% form_for(@foto, :html => { :multipart => true }) do |f| %>
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li><%= link_to 'Todos', fotos_path %></li>
+			<li class="active"><%= link_to 'Nueva Foto', "#" %></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2 class="title">
+			Nueva Foto
+		</h2>
+		<div class="inner">
+			<% form_for(@foto, :html => { :multipart => true }) do |f| %>
 
-  <%= f.error_messages %>
+			  <%= f.error_messages %>
 
-  <p>
-    <%= f.label :titulo %><br />
-    <%= f.text_field :titulo %>
-  </p>
+			  <p>
+			    <%= f.label :titulo %><br />
+			    <%= f.text_field :titulo %>
+			  </p>
 
-  <p>
-    <%= f.label :imagen %><br />
-    <%= f.file_field :imagen %>
-  </p>
-  <p>
-    <%= f.submit 'Guardar' %>
-  </p>
-<% end %>
-
-<%= link_to 'Regresar', fotos_path %>
+			  <p>
+			    <%= f.label :imagen %><br />
+			    <%= f.file_field :imagen %>
+			  </p>
+			  <p>
+			    <%= f.submit 'Guardar' %>
+			  </p>
+			<% end %>
+		</div>
+	</div>
+</div>

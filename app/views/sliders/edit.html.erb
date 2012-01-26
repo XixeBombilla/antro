@@ -1,19 +1,19 @@
 <div class="block" id="block-text">
 	<div class="secondary-navigation">
 		<ul class="wat-cf">
-			<li><%= link_to 'Todos', fotos_path %></li>
-			<li><%= link_to 'Nueva Foto', new_foto_path %></li>
-			<li class="active"><%= link_to "Editando Imagen: #{@foto.titulo}", "#" %></li>
+			<li><%= link_to 'Todos', sliders_path %></li>
+			<li><%= link_to 'Nuevo Slide', new_slider_path %></li>
+			<li class="active"><%= link_to "Editando Slide: #{@slider.titulo}", "#" %></li>
 			
 		</ul>
 		
 	</div>
 	<div class="content">
 		<h2 class="title">
-			 <%=h @foto.titulo %>
+			 <%=h @slider.titulo %>
 		</h2>
 		<div class="inner">
-			<% form_for(@foto, :html => { :multipart => true }) do |f| %>
+			<% form_for(@slider, :html => { :multipart => true }) do |f| %>
 
 			  <%= f.error_messages %>
 

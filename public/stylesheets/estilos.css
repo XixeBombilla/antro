@@ -1,6 +1,6 @@
 body {
 
-    background-image: url(../images/back.jpg);
+    background: url(../images/back.png) top center fixed no-repeat #000 !important;
     color:white;
     padding:0;
     margin-top:0; 
@@ -74,7 +74,7 @@ src: url("../schoolbook/AGSchoolbookMedium.ttf") format("opentype");
 }
 
 .cuadroMenu a:hover{
-    font-family:schoolbook N;
+    font-family:schoolbook ;
     color:white;
     text-decoration:none;
 }
@@ -216,15 +216,15 @@ margin-left:-1px;
 #menucenter{
     margin:auto;
 margin-top:-5px;
-    width:500px;
+    width:600px;
+	padding:0;
 
 }
 
 #cuadrosCenter{
     margin:auto;
 margin-top:0;
-    width:500px;
-    padding-left:40px;
+    width:600px;
 
 }
 
@@ -235,13 +235,6 @@ margin-top:0;
     
 }
 
-#frontimg{
-    height:516px;
-     margin-top:-516px;
-      position:absolute;
-      z-index:1000;
-    
-}
 
 #galeria{
     height:516px;
@@ -252,6 +245,6 @@ margin-top:0;
     height:516px;
      margin-top:-516px;
      position:absolute;
-     z-index:1001;
+     z-index:100;
     
 }

@@ -1,8 +1,23 @@
-<p>
-  <b>Titulo:</b>
-  <%=h @foto.titulo %>
-</p>
 
-
-<%= link_to 'Edit', edit_foto_path(@foto) %> |
-<%= link_to 'Back', fotos_path %>
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li><%= link_to 'Todos', fotos_path %></li>
+			<li><%= link_to 'Nueva Foto', new_foto_path %></li>
+			<li class="active"><%= link_to "#{@foto.titulo.capitalize}", "#" %></li>
+			<li><%= link_to 'Editar', edit_foto_path(@foto) %></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2 class="title">
+		  <%=h @foto.titulo.capitalize %>
+		</h2>
+		<div class="inner">
+			<p class="first">
+			Imagen:<br />
+				<%= image_tag @foto.imagen.url(:thumb) %>
+			</p>
+			
+		</div>
+	</div>
+</div>

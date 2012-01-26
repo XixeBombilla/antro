@@ -1,0 +1,23 @@
+<div class="block" id="block-text">
+	<div class="secondary-navigation">
+		<ul class="wat-cf">
+			<li><%= link_to 'Todos', sliders_path %></li>
+			<li><%= link_to 'Nuevo Slide', new_slider_path %></li>
+			<li class="active"><%= link_to "#{@slider.titulo.capitalize}", "#" %></li>
+			<li><%= link_to 'Editar', edit_slider_path(@slider) %></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2 class="title">
+		  <%=h @slider.titulo.capitalize %>
+		</h2>
+		<div class="inner">
+			<p class="first">
+			Imagen:<br />
+				<%= image_tag @slider.imagen.url(:thumb) %>
+			</p>
+			
+		</div>
+	</div>
+</div>
+

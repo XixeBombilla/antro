@@ -1,8 +1,8 @@
 <div class="block" id="block-text">
 	<div class="secondary-navigation">
 		<ul class="wat-cf">
-			<li class="active"><%= link_to 'Todos', fotos_path %></li>
-			<li><%= link_to 'Nueva Foto', new_foto_path %></li>
+			<li class="active"><%= link_to 'Todos', sliders_path %></li>
+			<li><%= link_to 'Nuevo Slider', new_slider_path %></li>
 		</ul>
 	</div>
 	<div class="content">
@@ -16,13 +16,13 @@
 			  <th>Acciones</th>
 			</tr>
 		      
-		      <% @fotos.each do |foto| %>
+		      <% @sliders.each do |slider| %>
 			<tr  class="<%= cycle("even", "odd") %>">
-			      <td><%= image_tag foto.imagen.url(:thumb) %></td>
-			  <td><%=h link_to  foto.titulo,foto %></td>
+			      <td><%= image_tag slider.imagen.url(:thumb) %></td>
+			  <td><%=h link_to  slider.titulo,slider %></td>
 			  <td>
-			  <%= link_to 'Editar', edit_foto_path(foto) %>
-			  <%= link_to 'Eliminar', foto, :confirm => 'Estas Seguro?', :method => :delete %></td>
+			  <%= link_to 'Editar', edit_slider_path(slider) %>
+			  <%= link_to 'Eliminar', slider, :confirm => 'Estas Seguro?', :method => :delete %></td>
 			</tr>
 		      <% end %>
 		      </table>
@@ -34,4 +34,3 @@
 		</div>
 	</div>
 </div>
-

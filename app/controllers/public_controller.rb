@@ -21,4 +21,8 @@ class PublicController < ApplicationController
     
   end
   
+  def photo
+    @fotos = Foto.all
+  end
+  
 end
