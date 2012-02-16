@@ -2,6 +2,7 @@ config/database.yml
 log/*
 .DS_Store
 public/system/*
+public/fotosGaleria/*
 public/fotosEvento/*
 public/fotosGaleria/*
 public/fotos_generales/*
